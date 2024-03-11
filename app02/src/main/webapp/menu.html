@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        ul{
+            width: 180px;
+            height: 90px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #baaba9; 
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            width: 150px;
+            height: 30px;
+            margin: 1px;
+        }
+        .home::before {
+            content: "";
+            display: inline-block;
+            background-image: url("home.PNG");
+            background-position: center;
+            background-size: cover;
+            width: 1em; /* 원하는 크기로 조절하세요 */
+            height: 1em;
+        }
+        .tags::marker{
+            content: "♧";
+        }
+        .about::marker{
+            content: "☎";
+        }
+        .home{
+            list-style-type: none;
+          font-size: 20px;
+          position: fixed;
+            top: 0;
+            right: 0;
+            
+        }
+        .tags{
+            position: fixed;
+            top: 30px;
+            right: 0;
+        }
+        .about{
+            position: fixed;
+            top: 60px;
+            right: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="home"><a href="#"> Home</a></li>
+            <li class="tags"><a href="#">Tags</a></li>
+            <li class="about"><a href="#">About</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

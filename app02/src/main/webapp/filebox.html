@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    .container{
+        div{
+            display: inline-block;
+            width: 100px;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+    }
+    .box{
+   	 	display : flex;
+        flex-direction: row; /* row,column,reverse */
+        width:100%;
+        height:800px;
+        align-items: center; /* flex-end,flex-start,stretch,center */
+        justify-content: center;
+        
+    	div{
+           /* 
+           flex-grow: 0;
+            flex-shrink: 0;
+    		width: 100px;
+    		*/
+            background-color: aqua;
+            border: 1px solid black;
+
+            &:first-child{
+            	flex-grow: 1 0 auto;
+            	
+            }
+            &:nth-child(2n) {
+				flex-grow: 0;	
+                flex-shrink: 0;
+                flex-basis: 100px;
+			}
+            &:nth-child(3n) {
+				flex-grow: 1;	
+                flex-shrink: 0;
+                flex-basis: 100px;
+			}
+            }   
+           
+    }
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        </div>
+        <div class="box">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        </div>
+</body>
+</html>

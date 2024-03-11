@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <style>
+        div{
+            background-color: red;
+        }
+        .container{
+            background-color: blue;
+        }
+        div[class="container"]{
+            background-color: green;
+        }
+        a{
+            text-decoration: double;
+        }
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: coral;
+        }
+        label:has(input:checked){
+            color: green;
+        }
+        input[type="checkbox"]{
+            /*display: none;*/
+            visibility: hidden;
+        }
+        button:hover{
+            background-color: rgb(255, 0, 204);
+        }
+
+    </style>
+    <body>
+        <div class="container">
+           <p>TEXT</p>
+           <a href="#">LINK</a>
+           <button>버튼</button>
+           <label ><input type="checkbox"/>체크박스</label>
+           <label ><input type="radio"/>라디오버튼</label>
+        </div>
+    </body>
+</html>
