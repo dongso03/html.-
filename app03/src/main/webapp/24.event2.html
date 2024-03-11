@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>]</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <input type="number" id="left">
+    <input type="number" id="right">
+    <button id="plus">+</button>
+    <span id="result"></span>
+    
+</body>
+    <script>
+        let left = document.getElementById("left");
+        let right = document.getElementById("right");
+        let plus = document.getElementById("plus");
+        let result = document.getElementById("result");
+
+        plus.addEventListener("click", function(e){
+            let leftNum =  Number(left.value);
+            let rightNum= Number(right.value);
+            //조건식안에 부련이아니더라도 다 들어갈수있다.
+            if(leftNum !=0 &&rightNum){ // 숫자값의경우 0이 아니면 트루다는 판정 
+                result.textContent =leftNum +rightNum;
+            } else{
+                result.textContent= "0이 아닌수 입력하셈"
+            }
+
+        });
+
+        // if 조건식에서 펄스인경우는 다음과 같은 값일 경우이다.
+        // false
+        // null
+        // undefined
+        //0
+        //-0
+        //"" (빈문자열)
+        //NaN
+        // 주의 if("0") >> 참임
+    </script>
+</html>

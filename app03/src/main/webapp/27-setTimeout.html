@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <button id="plus">누르면 숫자가증가해요</button>
+    <button id="stop">누르면 멈추고 0만듬</button>
+    <span id="result"></span>
+</body>
+    <script>
+        let plus = document.getElementById("plus");
+        let result = document.getElementById("result");
+        let stop = document.getElementById("stop");
+        let num = 0;
+        
+        numPlus= () => {
+            num++
+            result.textContent=num
+        }
+        
+        let s= result.textContent=setInterval(numPlus,1000)
+
+        plus.addEventListener("click", function(e){
+           s
+        //   s= result.textContent=setInterval(numPlus,1000)
+        });
+
+        stop.addEventListener("click", function(e){
+           clearInterval(s);
+           result.textContent="";
+        });
+
+
+    //     function printHello(){
+    //         console.log("hi");
+    //     }
+    //    // setTimeout(printHello,3000);
+    //  let num=   setInterval(printHello, 1000);
+ //       clearInterval(num)
+
+
+    </script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body></body>
+  <script>
+    //sum();  > hoisting 되지않아 에러 발생 변수의 선언이기에
+
+    // console.log(result);
+
+    // arrow 함수 
+    let sum= (x,y) => console.log(x + y);
+
+    function minus(x,y) {
+        return x - y;
+    }
+
+    function multiply(x,y){};
+
+    let div= (x,y) => x / y;
+
+    let mod = (x,y)=> {
+        //여러문장의 경우는 중괄호 사용 가능
+      return x%y; // 여러문장일 경우 리턴 명시해줘야함
+
+    }
+
+    sum();
+    sum(100, "ㅇㄹ");
+
+    let result = minus(400,300);
+    console.log(result);
+
+    let r = multiply(2,8);
+    console.log(r);
+    
+    let d = div(10,2);
+    console.log(d);
+
+    let m = mod(7,2);
+    console.log(m);
+
+ </script>
+</html>

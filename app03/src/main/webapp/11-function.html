@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body></body>
+  <script>
+    printHello(); // hoisting : 함수는 선언되면 맨위로 올려서 흐름에 지장을 주지않게 한다.
+
+    //함수 : function
+    function printHello() {
+      console.log("Hello!");
+    }
+
+    printHello = function () {
+      console.log("World!");
+    };
+
+    printHello();
+    // printnonononono();
+    printHello();
+    printHello();
+  </script>
+</html>

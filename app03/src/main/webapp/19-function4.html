@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body></body>
+  <script>
+    function hello(){
+        console.log("Hello");
+    }
+
+    let World = hello;
+
+    World();
+
+    let person ={
+        name: "길동"
+    };
+
+    person.say = World;
+    person.say();
+ 
+    let dog ={
+        name: "댕댕이"
+    };
+    dog.bark = World;
+    dog.bark();
+ 
+ </script>
+  </html>
