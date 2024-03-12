@@ -1,0 +1,8 @@
+1.자바스크립트 실행환경은? 웹브라우저,node.js 등
+2. 자바스크립트가 브라우저에 컴파일없이 실행가능한이유는 인터프리터 언어
+3. 변수 선언 키워드? let, const ,var
+4. 자료형? number string boolean object ,undefined
+5. 변수타입 결정시기? 대입연산시 동적
+6. 함수 선언 방법? function , arrow 
+7. hoisting ? t스크립트 실행전 전역 객체에 var,function 을 미리 할당
+8 callback함수? 함수 내부에서 호출할 함수를 파라미터로 전달받는 형태
