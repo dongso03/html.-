@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body></body>
+  <script>
+    class Person {
+      #name; // 샾 붙이면 프라이빗해진다.
+      #age;
+      constructor(name, age) {
+        this.#name = name;
+        this.#age = age;
+      }
+      get name() {
+        return this.#name;
+      }
+      set name(name) {
+        this.#name = name;
+      }
+      hello(){
+        console.log("hello");
+      }
+      toSting(){
+        return `제이름은 ${this.#name} 나이는 ${this.#age}`
+      }
+      valueOf(){
+        return this.#age;
+      }
+
+    }
+    let d = new Person("둘리", 22);
+    d.hello()
+
+    console.log(`객체를 문자열르 활용 할때는 toSting이 호출됩니다: ${d}`);
+    console.log(100 -d);
+
+    class Student extends Person{
+        #score;
+
+        constructor(name,age,score){
+            super(name,age)
+            this.#score = score;
+        }
+            get score(){
+                return this.#score     
+            }
+            set score(score){
+                this.#score = score;
+            }
+    }
+    let s1 = new Student("길동",44,98)
+    
+
+    // console.log(d.name);
+    // d.name = "박둘리";
+    // console.log(d.name);
+  </script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    
+</body>
+<script>
+    //Object.defineProperty  ??이런것도 있다? 먼데그래서?
+
+
+       function Person(name,age)  {
+        let _name= name;
+        let _age = age;
+
+        return{
+            get name(){
+                return _name;
+            },
+            set name(name){
+                _name = name;
+            }
+        }
+    };
+
+    let dooli = new Person("둘리",22);
+    console.log(dooli.name)
+    dooli.name = "김둘리"
+    console.log(dooli.name)
+
+</script>
+</html>
